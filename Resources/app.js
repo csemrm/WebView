@@ -1,5 +1,6 @@
-var window = Titanium.UI.createWindow({
-	backgroundColor : '#fff'
+var win1 = Titanium.UI.createWindow({
+	backgroundColor : '#fff',
+
 });
 
 // Create a WebView
@@ -11,8 +12,8 @@ aWebView.addEventListener('load', function(e) {
 	Ti.API.info('webview loaded: ' + e.url);
 });
 
-window.add(aWebView);
+win1.add(aWebView);
 
-window.open({
+win1.open({
 	fullscreen : true
 });

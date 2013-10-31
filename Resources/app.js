@@ -5,13 +5,9 @@ var win1 = Titanium.UI.createWindow({
 
 // Create a WebView
 var aWebView = Ti.UI.createWebView({
-	url : 'chart.html'
+	url : 'http://docs.appcelerator.com/'
 });
-aWebView.addEventListener('load', function(e) {
-
-	Ti.API.info('webview loaded: ' + e.url);
-});
-
+ 
 win1.add(aWebView);
 
 win1.open({
